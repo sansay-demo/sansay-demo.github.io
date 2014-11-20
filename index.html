@@ -242,6 +242,8 @@
 							<button type="submit" class="submit-btn">GO</button>
 						</form>
 						<br/>
+											<h2 class="twitter-post">click below to call us now!</h2>
+					<div id="click-to-call" style="width: 100px; margin-left: auto; margin-right: auto"></div>
 					</div>
 				</div>
 			</div>
@@ -285,5 +287,12 @@
 		<!--
 		<script src="js/jquery-ui.js"></script>
 	-->
+	<script src="http://8.38.57.47:8080/SSConfig/sansay-click2call.js"></script>
+<script>
+  window.onload = function() {
+    $("#click-to-call").click2call("8.38.57.47", "ing/click.jpg", {name: "Gerhards Bike Shop", number: "12054138721"});
+    $("#click-to-call").click2call.authenticate("eyJpcCI6IjguMzguNTcuNDciLCJ1c2VyIjoiMTYxOTU1NTEyMzQiLCJwd2QiOiJnbGVuZyJ9");
+  }
+</script>
 	</body>
 </html>
